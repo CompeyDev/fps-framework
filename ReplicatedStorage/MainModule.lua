@@ -29,4 +29,19 @@ function module.weldgun(gun)
   end
 end  
 
+function module.cast --use fastcast for bullet projectiles
+  
+  local GunBarrel = gun.GunComponents.Barrel
+  
+  local Bullet = Instance.New("Part")
+  Bullet.Size = Vector3.new(1, 1, 5)
+  Bullet.Anchored = true
+  Bullet.CanCollide = false
+  Bullet.Color = Color3.new(219, 239, 0)
+  Bullet.Material = Enum.Material.Neon
+  Bullet.Parent = game.Workspace -- configure bullet part
+  
+  Bullet.CFrame = CFrame.new(GunBarrel.Position, endposition)
+end  
+
 return module
