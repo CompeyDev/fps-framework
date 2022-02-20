@@ -1,7 +1,7 @@
 <div align="center">
   <br />
   <p>
-    <a href="https://devcomp.tk"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.shareicon.net%2Fdata%2F2016%2F06%2F18%2F603669_lua_512x512.png&f=1&nofb=1" width="248" alt="discord.js" /></a>
+    <a href="https://devcomp.tk"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fkinda-static.userstyles.org%2Fstyle_screenshots%2F187334_after.png&f=1&nofb=1" width="9000" alt="discord.js" /></a>
   </p>
   <br />
   <p>
