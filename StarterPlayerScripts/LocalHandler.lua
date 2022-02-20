@@ -12,3 +12,4 @@ game:GetService("RunService").RenderStepped:Connect(function(dt)
 end)
 
 MainModule.weldgun(GunModel) --importing weldgun function
+MainModule.equip(Viewmodel, GunModel, AnimationsFolder.Hold) --call hold animation function with animation
