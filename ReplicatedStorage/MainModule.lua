@@ -4,6 +4,16 @@ function module.update(viewmodel, dt)
   viewmodel.HumanoidRootPart.CFrame = game.Workspace.Camera.CFrame --makes it so the viewmodel tracks the camera
 end  
 
+function module.equip(viewmodel, gun) --equip function so the gun welds to the viewmodel
+  local GunHandle = gun.GunComponents.Handle
+  local HRP_Motor6D = viewmodel:WaitForChild("HumanoidRootPart").Handle
+  
+  gun.Parent = viewmodel
+  HRP_Motor6D.Part1 = GunHandle
+  local Hold = viewmodel.AnimationController:LoadAnimation(hold) --load the hold animation
+  Hold:Play()
+end  
+
 function module.weldgun(gun)
   local Main = gun.GunComponents.Handle
   
