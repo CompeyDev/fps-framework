@@ -42,6 +42,15 @@ function module.cast --use fastcast for bullet projectiles
   Bullet.Parent = game.Workspace -- configure bullet part
   
   Bullet.CFrame = CFrame.new(GunBarrel.Position, endposition)
+  
+  
+  Loop = game:GetService("RunService").RenderStepped:Connect(function(dt)
+  Bullet.CFrame *= CFrame.new(0, 0, -velocity, * (dt * 60))
+  if (Bullet.Position - GunBarrel.Position).magnitude > 5000 then
+        Bullet:Destroy()
+        Loop:Disconnect() -- use renderstepped to make it go forward and then destroy it after one point
+  end      
+  end)
 end  
 
 return module
