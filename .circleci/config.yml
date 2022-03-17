@@ -9,7 +9,7 @@ jobs:
       - sonarcloud/scan
 
 orbs:
-  sonarcloud: sonarsource/sonarcloud@1.0.1
+  sonarcloud: sonarsource/sonarcloud@1.0.3
 
 workflows:
   main:
